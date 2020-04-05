@@ -59,3 +59,7 @@ button:focus,
 button:active {
   outline: none;
 }
+
+p {
+  line-height: 1.6;
+}
