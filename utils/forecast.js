@@ -15,7 +15,7 @@ const forecast = (latitude, longitude, callback) => {
           temperature: body.currently.temperature,
           precipitation: body.currently.precipProbability
         },
-        forecast: `${body.daily.data[0].summary}It is currently ${body.currently.temperature} degrees and there is a ${body.currently.precipProbability}% chance of rain`
+        forecast: `${body.daily.data[0].summary}It is currently ${body.currently.temperature}F and there is a ${body.currently.precipProbability}% chance of rain. Temperatures will reach a high of ${body.daily.data[0].temperatureMax}F and a low of ${body.daily.data[0].temperatureMin}F`
       });
     }
   });
